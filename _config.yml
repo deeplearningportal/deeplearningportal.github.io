@@ -1,0 +1,65 @@
+url: https://deeplearningportal.github.io
+baseurl:
+
+# Site settings
+title: Deep Learning Portal
+email: deeplearningportal@gmail.com
+description: "Deep Learning Portal is a mentorship program that connects historically excluded and disadvantaged students with deep learning specialists from leading institutions in computer science."
+
+
+# Team names, titles and social links
+people:
+- name: Moo Jin Kim
+  pic: 1
+  position: Founder and Director
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: stack-overflow
+      url: #
+
+- name: Chelsea Finn
+  pic: 2
+  position: Faculty Advisor
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Breauna Spencer
+  pic: 3
+  position: Department Advisor
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: google-plus
+      url: #
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/jekyllrb
+  - title: facebook
+    url:
+  - title: stack-overflow
+    url: http://stackoverflow.com/questions/tagged/jekyll
+  - title: bitbucket 
+    url: http://bitbucket.org/jekyll
+  - title: github
+    url: http://github.com/jekyll
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: TODO
+  - line: TODO
+
+# Build settings
+markdown: kramdown
+permalink: pretty

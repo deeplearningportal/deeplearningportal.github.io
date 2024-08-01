@@ -1,0 +1,31 @@
+<!-- Team Grid Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Team</h2>
+                    <h3 class="section-subheading text-muted">Click each individual's photo for more information.</h3>
+                </div>
+            </div>
+            <div class="row">
+            {% assign sorted_posts = site.posts | sort: 'modal-id' %}
+            {% for post in sorted_posts %}
+                <div class="col-md-4 col-sm-6 team-item">
+                    <a href="#teamModal{{ post.modal-id }}" class="team-link" data-toggle="modal">
+                        <div class="team-hover">
+                            <div class="team-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/team/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="team-caption">
+                        <h4>{{ post.title }}</h4>
+                        <p class="subtitle">{{ post.subtitle }}</p>
+                        <p class="subsubtitle">{{ post.subsubtitle }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </section>

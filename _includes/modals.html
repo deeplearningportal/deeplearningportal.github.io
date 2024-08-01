@@ -1,0 +1,42 @@
+ <!-- Team Modals -->
+ {% for post in site.posts %}
+    <div class="team-modal modal fade" id="teamModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2 class="team-member-name">{{ post.title }}</h2>
+                            <h3 class="team-member-subtitle">{{ post.subtitle }}</h2>
+                            <hr class="star-primary">
+                            <img src="img/team/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            <p class="team-description">{{ post.description }}</p>
+                            <!-- <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
+                                    </strong>
+                                </li>
+                            </ul> -->
+                            <ul class="social">
+                                {% for network in post.social %}
+                                  <li class="social-item">
+                                    <a href="{{ network.url }}" target="_blank">
+                                      <i class="{{ network.icon }}"></i>
+                                    </a>
+                                  </li>
+                                {% endfor %}
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
